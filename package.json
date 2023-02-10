@@ -1,0 +1,141 @@
+{
+  "name": "capsule-aio",
+  "version": "v0.2.1-alpha",
+  "description": "CapsuleAIO",
+  "author": "Capsule Partners, LP",
+  "main": "./main.js",
+  "homepage": "./",
+  "build": {
+    "appId": "com.capsule.aio",
+    "productName": "CapsuleAIO",
+    "copyright": "Copyright © 2021 Capsule Partners, LP",
+    "artifactName": "CapsuleAIO-${version}.${ext}",
+    "directories": {
+      "buildResources": "./build/",
+      "output": "./bin/",
+      "app": "./"
+    },
+    "files": [
+      "./package.json",
+      {
+        "from": "./build/",
+        "to": "./",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities",
+      "icon": "./build/logo512.png"
+    },
+    "win": {
+      "target": "msi",
+      "icon": "./build/favicon.ico",
+      "legalTrademarks": "CapsuleAIO is a registered trademark of Capsule Partners, LP and Capsule Technologies, LLC any unauthorized use is strictly forbidden.",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "asarUnpack": [
+      "**/qqR.dll",
+      "**/qqR.dylib"
+    ],
+    "npmRebuild": true,
+    "removePackageScripts": true,
+    "extends": null
+  },
+  "scripts": {
+    "start": "npx webpack serve --mode=development",
+    "nologin": "SET CAPSULE_NO_LOGIN=true&&npx webpack serve --mode=development",
+    "build": "npm run react-build&&npx webpack",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "react-debug": "npm run react-build&&npm run electron",
+    "run-build": "electron ./build/main.js",
+    "react-dev-no-browser": "set BROWSER=none&&npm run react-dev",
+    "react-dev": "react-app-rewired start",
+    "react-build": "react-app-rewired build"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "customize-cra": "^1.0.0",
+    "electron": "^16.0.1",
+    "electron-builder": "^22.14.5",
+    "electron-context-menu": "^3.1.1",
+    "file-loader": "^6.2.0",
+    "javascript-obfuscator": "^3.0.0",
+    "kill-port": "^1.6.1",
+    "react": "^17.0.2",
+    "react-app-rewire-multiple-entry": "^2.2.1",
+    "react-app-rewired": "^2.1.8",
+    "react-credit-cards": "^0.8.3",
+    "react-dom": "^17.0.2",
+    "react-input-checkbox": "^0.1.6",
+    "react-modal": "^3.13.1",
+    "react-redux": "^7.2.4",
+    "react-scripts": "^4.0.3",
+    "react-select": "^4.3.1",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "rewire-entry": "^1.0.1",
+    "sass": "^1.43.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-obfuscator": "^2.6.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.15.3",
+    "@babel/traverse": "^7.15.0",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "bezier-js": "^2.6.1",
+    "bluebird": "^3.7.2",
+    "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "electron-store": "^8.0.0",
+    "ffi-napi": "^4.0.3",
+    "get-port": "^5.1.1",
+    "jimp": "^0.16.1",
+    "lodash": "^4.17.21",
+    "node-gyp": "^8.4.0",
+    "pixelmatch": "^5.2.1",
+    "proxy-chain": "^1.0.2",
+    "psl": "^1.8.0",
+    "puppeteer": "^10.2.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
+    "qs": "^6.10.1",
+    "random": "^2.2.0",
+    "ref-napi": "^3.0.3",
+    "rsa-pem-from-mod-exp": "^0.8.4",
+    "seedrandom": "^3.0.5",
+    "url": "^0.11.0",
+    "uuid": "^8.3.2",
+    "weak-key": "^1.0.2",
+    "ws": "^7.4.6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.3",
+    "utf-8-validate": "^5.0.5"
+  }
+}

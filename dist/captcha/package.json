@@ -1,0 +1,30 @@
+{
+  "name": "captcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set UV_THREADPOOL_SIZE=1024 && electron main.js main",
+    "run": "set UV_THREADPOOL_SIZE=1024 && electron main.js main"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^13.1.9",
+    "jimp": "^0.16.1",
+    "pixelmatch": "^5.2.1",
+    "proxy-chain": "^0.4.7",
+    "puppeteer": "^8.0.0",
+    "puppeteer-extra": "^3.1.17",
+    "puppeteer-extra-plugin-stealth": "^2.7.5",
+    "random": "^2.2.0",
+    "request": "^2.88.2",
+    "seedrandom": "^3.0.5",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  },
+  "pkg": "rm -rf ./pkg && pkg -t node8-macos-x64 --out-path pkg .",
+  "postpkg": "mkdir -p ./pkg/node_modules/puppeteer && cp -R ./node_modules/puppeteer/.local-chromium ./pkg/node_modules/puppeteer"
+}

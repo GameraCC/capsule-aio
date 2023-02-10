@@ -1,0 +1,17 @@
+@import './colors.module';
+
+#tasksGroup > form {
+  width: 500px;
+  height: 400px;  
+
+  &>.main>div.form{
+    padding: 0 60px;
+
+    &>div{
+      
+    justify-content: space-around;
+      &>.group, &>.row{
+      }
+    }
+  }
+}

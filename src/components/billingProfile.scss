@@ -1,0 +1,26 @@
+@import './colors.module';
+
+#billingProfile > form {
+  width: 800px;
+  height: 550px;
+
+  & > .main > div.form > div {
+    justify-content: space-between;
+
+    & .payment-wrapper{
+      height: 100%;
+      display: flex;
+
+      & > div{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+
+        & .group, & .row{
+          margin: 12px 0;
+        }
+      }
+    }
+  }
+}

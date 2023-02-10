@@ -1,0 +1,79 @@
+$base01: #161B24;
+$base02: darken($base01, 1);
+$base00: #191E28;
+$base0: #1F2532;
+$base1: #242B3B;
+$base2: #313B52;
+$base3: #647dee;
+$base4: #D1AAFF;
+$base5: #bb79ff;
+$white: #FFFFFF;
+$yellow: #ffda29;
+$orange: #ff6d2d;
+$red: #FF5757;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #57FF9A;
+$white-50: rgba(#fff,0.5);
+$white-25: rgba(#fff,0.25);
+$gray: rgba(#fff,0.15);
+$blurple: #4349A8;
+
+.text-red{
+  color: $red
+}
+
+.text-green{
+  color: $green
+}
+
+.text-orange{
+  color: $orange
+}
+
+.text-yellow{
+  color: $yellow
+}
+
+.text-magenta{
+  color: $magenta
+}
+
+.text-blue{
+  color: $blue
+}
+
+.text-base3{
+  color: $base3
+}
+
+.text-base4{
+  color: $base4
+}
+
+:export {
+  base02: $base02;
+  base01: $base01;
+  base00: $base00;
+  base0: $base0;
+  base1: $base1;
+  base2: $base2;
+  base3: $base3;
+  base4: $base4;
+  base5: $base5;
+  white: $white;
+  yellow: $yellow;
+  orange: $orange;
+  red: $red;
+  magenta: $magenta;
+  violet: $violet;
+  blue: $blue;
+  cyan: $cyan;
+  green: $green;
+  white50: $white-50;
+  white25: $white-25;
+  gray: $gray;
+  blurple: $blurple;
+}

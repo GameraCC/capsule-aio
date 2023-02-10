@@ -1,0 +1,63 @@
+@import './colors.module';
+
+$rccs-default-background: linear-gradient(30deg, $base0, darken($base1,1));
+$rccs-unknown-background: linear-gradient(30deg, $base0, darken($base1,1));
+$rccs-mastercard-background: $base00;
+$rccs-amex-background: linear-gradient(25deg, #0f6a9e, #1345cd);
+$rccs-visa-background: linear-gradient(25deg, rgb(34, 24, 179), rgb(26, 29, 78));
+$rccs-discover-background: linear-gradient(25deg, rgb(238, 134, 37), rgb(165, 98, 22));
+
+$rccs-size: 300px;
+$rccs-card-ratio: 1.6;
+
+@import 'react-credit-cards/lib/styles.scss';
+
+.rccs {
+  & .rccs__issuer {
+    right: 8%
+  }
+
+  & .rccs__card--amex .rccs__issuer {
+    background-image: url('../img/amex.svg');
+  }
+
+  & .rccs__card--visa .rccs__issuer {
+    background-image: url('../img/visa.svg');
+  }
+
+  & .rccs__card--mastercard .rccs__issuer {
+    background-image: url('../img/mastercard.svg');
+  }
+
+  & .rccs__card--discover .rccs__issuer {
+    background-image: url('../img/discover.svg');
+  }
+
+  & .rccs__card--front {
+    box-shadow: none;
+    & > .rccs__number{
+      font-size: 17px;
+    }
+    & > .rccs__name {
+      font-family: 'Source', monospace;
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    & > .rccs__expiry{
+      & > .rccs__expiry__valid{
+        font-size: 9px;
+      }
+      & > .rccs__expiry__value{
+        font-size: 14px;
+      }
+    }
+  }
+
+  & .rccs__card--back{
+    box-shadow: none;
+    & > .rccs__cvc{
+      left: 65%;
+    }
+  }
+}

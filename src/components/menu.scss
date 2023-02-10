@@ -1,0 +1,58 @@
+@import './colors.module';
+
+#Menu, #Menu>.wrapper{
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+#Menu {
+  max-height: 600px;
+  justify-content: center;
+
+  & > .wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-app-region: no-drag;
+      height: 100%;
+      padding: 0 20px;
+      & > svg {
+        transition: 100ms;
+        height: 40px;
+      }
+
+      &.active > svg {
+        & .circle {
+          fill: $base3;
+        }
+        & .main {
+          fill: $base3;
+        }
+        & .accent {
+          fill: $base4;
+        }
+      }
+
+      &:not(.active) > svg {
+        & .circle {
+          fill: transparent;
+        }
+        & .main {
+          fill: $gray;
+        }
+        & .accent {
+          fill: $gray;
+        }
+      }
+
+      &:hover:not(.active) > svg {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import './colors.module';
+
+#tasksCreate > form {
+  width: 800px;
+  height: 500px;
+
+  & > .main > div.form > div {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^7.15.2",
+    "@babel/traverse": "^7.15.0",
+    "@babel/types": "^7.15.0",
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "cheerio": "^1.0.0-rc.9",
+    "html-entities": "^2.3.2",
+    "psl": "^1.8.0",
+    "random": "^3.0.6",
+    "rsa-pem-from-mod-exp": "^0.8.4",
+    "seedrandom": "^3.0.5"
+  }
+}

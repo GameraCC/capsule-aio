@@ -1,0 +1,97 @@
+@import './colors.module';
+
+svg[svgTransform="icon"]{
+    transform: perspective(1px) translateZ(0);
+    transition: 50ms ease-in-out;
+
+    &:active:not(.disabled){
+        transform: perspective(1px) translateZ(0) scale(0.95);
+    }
+
+    &[icon="import"]{
+        & > .main1{
+            fill: $violet;
+        }
+    
+        & > .main2{
+            fill: darken($white, 20);
+        }
+    
+    
+        &:hover {
+            & > .main1{
+                fill: lighten($violet,10)
+            }
+    
+            & > .main2{
+                fill: $white
+            }
+        } 
+    }
+
+    &[icon="export"] {
+        & > .main1{
+            fill: $magenta;
+        }
+    
+        & > .main2{
+            fill: darken($white, 20);
+        }
+    
+    
+        &:hover {
+            & > .main1{
+                fill: lighten($magenta,10)
+            }
+    
+            & > .main2{
+                fill: $white
+            }
+        } 
+    }
+
+    &[icon="plus"] {
+        fill: darken($white, 20);
+    
+        &:hover > .main{
+            fill: $white
+        }
+    }
+
+    &[icon="test"] {
+        fill: $blue;
+    
+        &:hover > .main{
+            fill: lighten($blue, 10)
+        }
+    }
+
+    &[icon="refresh"] {
+        fill: $base5;
+    
+        &:hover > .main{
+            fill: lighten($base5, 10)
+        }
+    }
+    
+    &[icon="trash"] {
+        & > .main1{
+            fill: $red;
+        }
+    
+        & > .main2{
+            fill: $orange;
+        }
+    
+    
+        &:hover {
+            & > .main1{
+                fill: darken($red,10)
+            }
+    
+            & > .main2{
+                fill: darken($orange,10)
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import './colors.module';
+
+#analytics {
+  & > .body {
+    min-height: 0;
+    & > .counts {
+      flex: 1;
+      max-width: 400px;
+
+      & > .wrapper {
+        & > .body {
+          padding: 24px 0 36px;
+
+          text-align: center;
+          font-family: 'Semibold', sans-serif;
+          font-size: 62px;
+        }
+
+        &.success > .body {
+          color: $base4;
+        }
+      }
+    }
+
+    & > .checkouts {
+      flex: 2;
+
+      & > .body {
+        min-height: 0;
+      }
+      & .table {
+        height: 100%;
+        overflow-y: auto;
+
+        & > table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          margin: -2px auto 0;
+
+          &>tbody>tr:not(:last-child):not(:only-child){            
+            border-bottom: 1px solid $base1;
+          }
+
+          & th {
+            background-color: $base0;
+          }
+
+          & th,
+          & td {
+            height: 42px;
+            font-size: 12px;
+
+            &.product {
+              width: 45%;
+            }
+
+            &.size {
+              width: 10%;
+            }
+
+            &.pass {
+              width: 20%;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

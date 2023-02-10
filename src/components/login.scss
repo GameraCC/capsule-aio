@@ -1,0 +1,57 @@
+@import './colors.module';
+
+html, body, #root, #loginWindow {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {  
+  background: url('../img/bg4.svg') no-repeat top 4px left 2px;
+}
+
+header {
+  height: 28px;
+  -webkit-app-region: drag;
+}
+
+#loginWindow {
+  display: flex;
+  flex-direction: column;  
+  background: url('../img/bg1.svg') no-repeat bottom 4px left 2px;
+
+    &:before {
+    content: url('../img/bg2.svg');
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
+
+  &:after {
+    content: url('../img/bg3.svg');
+    position: absolute;
+    top: 32px;
+    right: 2px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    margin: 1.2em 0;
+  }
+
+  & > input[type=text] {
+    width: 50%;
+    max-width: 460px;
+  }
+
+  & img:first-of-type{
+    height: 180px
+  }
+}

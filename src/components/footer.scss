@@ -1,0 +1,16 @@
+@import './colors.module';
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  background: $base0;
+
+  & > div {    
+    & > button {
+      margin: 0 12px;
+      min-width: 120px;
+    }
+  }
+}

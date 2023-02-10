@@ -1,0 +1,147 @@
+@import './colors.module';
+
+#settings {
+
+  & > .status {
+      margin: 10px 0px 0px 0px;
+  }
+
+  & > .body {
+    max-width: 1600px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+    @media (min-width: 1300px) {
+      padding: 0 15%;
+    }
+
+    & > .wrapper {
+      &:first-child {
+        flex: 1.5;
+      }
+      &:nth-child(2) {
+        flex: 1;
+      }
+
+      & > .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 0 auto;
+        padding: 24px 0 60px;
+        flex-wrap: wrap;
+
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Semibold', sans-serif;
+
+        & > div {
+          flex: 1;
+
+          &:not(:first-child) {
+            margin-top: 40px;
+          }
+
+          & > *:not(:first-child) {
+            margin-top: 14px;
+          }
+
+          &.discord {
+            display: flex;
+            justify-content: center;
+
+            & > .portrait {
+              width: 80px;
+              height: 80px;
+              position: relative;
+              flex: 0;
+
+              & > img {
+                position: relative;
+                min-width: 80px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+              }
+
+              &:after {
+                content: '';
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                bottom: 0;
+                right: 0;
+                border-radius: 50%;
+                background-color: $red;
+              }
+
+              &.active:after {
+                background-color: $green;
+              }
+            }
+
+            & > .name {
+              text-align: left;
+              & > span {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                &:last-child {
+                  margin-top: 2px;
+                  font-family: 'Alt Regular', sans-serif;
+                  color: $gray;
+                }
+              }
+
+              max-width: 200px;
+              margin-left: 32px;
+            }
+          }
+        }
+      }
+
+      & button {
+        font-size: 14px;
+        padding: 0 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.checkUpdate {
+          color: $base4;
+        }
+      }
+
+      & span.sp {
+        margin-left: 6px;
+        color: $base4;
+      }
+    }
+  }
+
+  input[type='text'] {
+    background-color: $base1;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Semibold', sans-serif;
+    padding: 0 40px 0 20px;
+    font-size: 16px;
+    height: 36px;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+
+    &:not(.active) {
+      color: $gray;
+      background: url('../img/eye.svg') no-repeat right 6px center;
+      background-color: $base1;
+      text-security: circle; /* IE/Safari */
+      -moz-text-security: circle; /* FireFox */
+      -webkit-text-security: circle; /* Chrome/Safari  */
+    }
+  }
+}

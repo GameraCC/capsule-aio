@@ -1,0 +1,10 @@
+{
+	"printWidth": 300,
+	"htmlWhitespaceSensitivity": "strict",
+	"jsxBracketSameLine": true,
+	"semi": false,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"proseWrap": "preserve",
+	"arrowParens": "avoid"
+}

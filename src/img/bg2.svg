@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="82" viewBox="0 0 121 103">
+  <g id="Group_253" data-name="Group 253" transform="translate(0.349)">
+    <g id="Group_250" data-name="Group 250" transform="translate(121 103) rotate(180)">
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(0.349 91)" fill="#4349a8"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="6" cy="6" r="6" transform="translate(109.349)" fill="#4349a8"/>
+      <g id="Group_249" data-name="Group 249" opacity="0.05">
+        <circle id="Ellipse_12" data-name="Ellipse 12" cx="6" cy="6" r="6" transform="translate(77.349)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(0.349 59)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_13" data-name="Ellipse 13" cx="6" cy="6" r="6" transform="translate(39.349)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="6" cy="6" r="6" transform="translate(109.349 91)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="6" cy="6" r="6" transform="translate(39.349 91)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="6" cy="6" r="6" transform="translate(77.349 91)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_10-3" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(0.349)" fill="#fff" opacity="0.5"/>
+        <circle id="Ellipse_10-4" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(0.349 30)" fill="#fff" opacity="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

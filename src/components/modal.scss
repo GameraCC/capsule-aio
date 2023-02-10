@@ -1,0 +1,58 @@
+@import './colors.module';
+
+.confirmModal, .inputModal {
+  & > form {
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin: 16px 0;
+    }
+
+    & span {
+      font-family: 'Semibold', sans-serif;
+      font-size: 20px;
+    }
+
+    & input[type='text'] {
+      width: 220px;
+      font-family: 'Semibold', sans-serif;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+.addModal {
+  & > form {
+    width: 400px;
+    padding: 2px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin: 16px 0;
+    }
+
+    & span {
+      font-family: 'Semibold', sans-serif;
+      font-size: 18px;
+    }
+
+    & input[type='submit'] {
+      position: absolute;
+      bottom: 30px;
+      width: 100px;
+      font-family: 'Semibold', sans-serif;
+      text-align: center;
+      color: $white
+    }
+
+    & textarea{
+      width: 100%;
+    }
+  }
+}

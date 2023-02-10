@@ -1,0 +1,47 @@
+@import './colors.module';
+
+.actions-controls {
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    margin: 0 2px;
+    padding: 4px;
+    transform: perspective(1px) translateZ(0);
+    transition: 50ms ease-in-out;
+
+    &:active {
+      transform: perspective(1px) translateZ(0) scale(0.95);
+    }
+
+    &.play {
+      & > svg .main {
+        fill: $base3;
+      }
+
+      &:hover > svg .main {
+        fill: lighten($base3, 10);
+      }
+    }
+
+    &.pause {
+      & > svg .main {
+        fill: $base4;
+      }
+
+      &:hover > svg .main {
+        fill: lighten($base4, 10);
+      }
+    }
+
+    &.trash {
+      & > svg .main {
+        fill: $red;
+      }
+
+      &:hover > svg .main {
+        fill: lighten($red, 10);
+      }
+    }
+  }
+}

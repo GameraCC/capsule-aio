@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="35" viewBox="0 0 235 44">
+  <g id="Group_252" data-name="Group 252" transform="translate(0.349)">
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(-0.349)" fill="#4349a8"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="6" cy="6" r="6" transform="translate(76.651)" fill="#fff" opacity="0.5"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="6" cy="6" r="6" transform="translate(108.651)" fill="#4349a8"/>
+    <g id="Group_199" data-name="Group 199" opacity="0.05">
+      <circle id="Ellipse_11" data-name="Ellipse 11" cx="6" cy="6" r="6" transform="translate(185.651)" fill="#fff"/>
+      <circle id="Ellipse_9" data-name="Ellipse 9" cx="6" cy="6" r="6" transform="translate(145.651)" fill="#fff"/>
+      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(222.651)" fill="#fff"/>
+      <circle id="Ellipse_10-3" data-name="Ellipse 10" cx="6" cy="6" r="6" transform="translate(-0.349 32)" fill="#fff"/>
+    </g>
+    <g id="Group_198" data-name="Group 198" transform="translate(77)" opacity="0.05">
+      <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="6" cy="6" r="6" transform="translate(31.651)" fill="#fff"/>
+      <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="6" cy="6" r="6" transform="translate(-0.349)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

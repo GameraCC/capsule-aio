@@ -1,0 +1,42 @@
+@import './colors.module';
+
+.window-controls {
+  -webkit-app-region: drag;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bolder;
+  font-size: 14px;
+
+  & > div {
+    -webkit-app-region: no-drag;
+    width: 13px;
+    text-align: center;
+    padding: 4px 6px;
+    transition: 50ms ease-in-out;
+    margin: 4px;
+    border-radius: 4px;
+    &:hover {
+      background: $base1;
+    }
+    transform: perspective(1px) translateZ(0);
+    transition: 50ms ease-in-out;
+
+    &:active {
+      transform: perspective(1px) translateZ(0) scale(0.95);
+    }
+  }
+
+  & > .min {
+    color: $base4;
+    line-height: 7px;
+    &:hover {
+      color: lighten($base4, 10%);
+    }
+  }
+  & > .exit {
+    color: $base3;
+    &:hover {
+      color: lighten($base3, 10%);
+    }
+  }
+}

@@ -1,0 +1,147 @@
+@import './colors.module';
+
+.search-header,
+.select-header,
+.empty-header,
+.analytics-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  min-height: 60px;
+
+  & > div {
+    flex: 1;
+  }
+
+  & > .title {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    font-family: 'Semibold', sans-serif;
+    font-size: 22px;
+    white-space: nowrap;
+    min-height: 45px;
+    margin-left: 24px;
+
+    & > .count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 45px;
+      margin: 0 14px;
+      border-radius: 50%;
+      background-color: rgba($base3, 0.15);
+      color: $base3;
+      font-weight: bolder;
+    }
+  }
+
+  & .controls {
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      height: 28px;
+      margin: 0 6px;
+      transform: perspective(1px) translateZ(0);
+      transition: transform 50ms;
+
+      &:first-of-type {
+        margin-left: 24px;
+      }
+
+      &:hover {
+        & .a {
+          stroke: url(#header-icon-gradient);
+        }
+        & .b {
+          fill: url(#header-icon-gradient);
+        }
+      }
+
+      &:active {
+        transform: perspective(1px) translateZ(0) scale(0.97);
+      }
+
+      & .a,
+      & .d {
+        fill: none;
+      }
+      & .a {
+        stroke: $white-25;
+        stroke-width: 3px;
+      }
+      & .b {
+        fill: $white-25;
+        font-size: 25px;
+        font-family: ProximaNova-Bold, Proxima Nova;
+        font-weight: 700;
+      }
+      & .c {
+        stroke: none;
+      }
+    }
+  }
+
+  & button {
+    &:disabled {
+      color: $white-50 !important;
+    }
+
+    &:first-of-type {
+      margin-left: 16px;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.search-header {
+  & > .search {
+    flex: 2;
+    align-items: center;
+    display: flex;
+
+    & > input[type='text'].search {
+      width: 100%;
+      background: url('../img/search.svg') no-repeat left 12px center;
+      background-color: $base01;
+      border-radius: 30px;
+      padding: 2px 50px;
+      min-height: 36px;
+
+      font-family: 'Semibold', sans-serif;
+      font-size: 13px;
+
+      transition: 50ms ease-in-out;
+      transform: perspective(1px) translateZ(0);
+    }
+  }
+}
+
+.select-header {
+  & > .select {
+    display: flex;
+    align-items: center;
+    flex: 2;
+
+    & > :first-child {
+      flex: 1;
+    }
+  }
+}
+
+.analytics-header {
+  & > .title {
+    flex: 0;
+  }
+
+  & > .select {
+    flex: unset;
+    margin-left: 40px;
+  }
+}

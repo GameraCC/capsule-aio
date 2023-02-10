@@ -1,0 +1,24 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+*       @qq-eyes @gameracc
+
+/* @qq-eyes
+/dist/ @qq-eyes
+/dist/captcha/ @gameracc @qq-eyes
+/dist/login/ @qq-eyes
+/dist/qq-request/ @qq-eyes
+/dist/qq-request-cookie/ @gameracc
+/dist/qq-request-logging/ @gameracc
+/dist/store/ @qq-eyes
+/dist/task-manager/ @qq-eyes @gameracc
+/dist/tasks/ @gameracc
+/dist/tasks/speedTest.js @qq-eyes @gameracc
+/public/ @qq-eyes
+/src/ @qq-eyes
+/.github/ @qq-eyes
+/_extra/
